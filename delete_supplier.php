@@ -22,7 +22,7 @@ class SupplierDeleter {
     }
 }
 
-// Create database connection using config file
+
 include_once("config.php");
 
 $supplierDeleter = new SupplierDeleter($mysqli);
@@ -31,3 +31,4 @@ $id = $_GET['id'];
 
 $message = $supplierDeleter->deleteSupplier($id);
 ?>
+

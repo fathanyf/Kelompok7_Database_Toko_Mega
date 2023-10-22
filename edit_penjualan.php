@@ -27,7 +27,7 @@ class PenjualanController {
     }
 }
 
-// Create database connection using config file
+
 include_once("config.php");
 
 $penjualanController = new PenjualanController($mysqli);

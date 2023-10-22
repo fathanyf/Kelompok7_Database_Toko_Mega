@@ -27,7 +27,7 @@ class HakAksesController {
     }
 }
 
-// Create database connection using config file
+
 include_once("config.php");
 
 $hakaksesController = new HakAksesController($mysqli);

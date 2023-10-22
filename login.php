@@ -6,13 +6,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Query the database to check if the provided credentials are valid
+
     $query = "SELECT * FROM pengguna WHERE NamaPengguna = '$username' AND Password = '$password'";
     $result = mysqli_query($mysqli, $query);
 
     if (mysqli_num_rows($result) == 1) {
         $_SESSION['logged_in'] = true;
-        header('Location: index.php'); // Redirect to the main page after successful login
+        header('Location: index.php'); 
         exit();
     } else {
         $error_message = "Invalid username or password";

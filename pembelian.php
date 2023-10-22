@@ -16,10 +16,10 @@ class DatabaseConnection {
     }
 }
 
-// Create database connection using config file
+
 $databaseConnection = new DatabaseConnection("config.php");
 
-// Fetch all pembelian data from the database
+
 $result = $databaseConnection->fetchDataFromDatabase("pembelian");
 ?>
 

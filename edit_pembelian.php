@@ -41,7 +41,7 @@ class PembelianManager {
     }
 }
 
-// Create database connection using config file
+
 include_once("config.php");
 
 $pembelianManager = new PembelianManager($mysqli);

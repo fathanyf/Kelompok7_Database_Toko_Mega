@@ -16,10 +16,10 @@ class DatabaseConnection {
     }
 }
 
-// Create a database connection using the config file
+
 $databaseConnection = new DatabaseConnection("config.php");
 
-// Fetch all supplier data from the database
+
 $result = $databaseConnection->fetchDataFromDatabase("supplier");
 ?>
 

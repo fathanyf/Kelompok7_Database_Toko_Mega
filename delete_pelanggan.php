@@ -22,7 +22,7 @@ class PelangganDeleter {
     }
 }
 
-// Create database connection using config file
+
 include_once("config.php");
 
 $pelangganDeleter = new PelangganDeleter($mysqli);
@@ -34,3 +34,4 @@ if (!empty($message)) {
     echo $message;
 }
 ?>
+

@@ -16,10 +16,10 @@ class DatabaseConnection {
     }
 }
 
-// Create database connection using config file
+
 $databaseConnection = new DatabaseConnection("config.php");
 
-// Fetch all pengguna data from the database
+
 $result = $databaseConnection->fetchDataFromDatabase("pengguna");
 ?>
 
@@ -42,7 +42,7 @@ $result = $databaseConnection->fetchDataFromDatabase("pengguna");
         echo "<tr>";
         echo "<td>".$pengguna_data['IdPengguna']."</td>";
         echo "<td>".$pengguna_data['NamaPengguna']."</td>";
-        echo "<td>********</td>"; // Replace the password with asterisks
+        echo "<td>********</td>"; 
         echo "<td>".$pengguna_data['HakAkses']."</td>";
         echo "<td><a href='edit_pengguna.php?id=".$pengguna_data['IdPengguna']."'>Edit</a> | <a href='delete_pengguna.php?id=".$pengguna_data['IdPengguna']."'>Delete</a></td></tr>";
     }

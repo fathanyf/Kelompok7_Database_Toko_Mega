@@ -22,7 +22,7 @@ class BarangController {
     }
 }
 
-// Create a database connection using the config file
+
 include_once("config.php");
 
 $barangController = new BarangController($mysqli);

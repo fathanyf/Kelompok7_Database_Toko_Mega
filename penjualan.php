@@ -2,10 +2,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Create database connection using config file
+
 include_once("config.php");
 
-// Fetch all penjualan data from the database
+
 $result = mysqli_query($mysqli, "SELECT * FROM penjualan");
 ?>
 

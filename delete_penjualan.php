@@ -22,7 +22,6 @@ class PenjualanDeleter {
     }
 }
 
-// Create database connection using config file
 include_once("config.php");
 
 $penjualanDeleter = new PenjualanDeleter($mysqli);

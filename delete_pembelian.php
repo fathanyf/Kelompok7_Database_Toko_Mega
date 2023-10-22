@@ -22,7 +22,7 @@ class PembelianDeleter {
     }
 }
 
-// Create database connection using config file
+
 include_once("config.php");
 
 $pembelianDeleter = new PembelianDeleter($mysqli);
@@ -34,3 +34,4 @@ if (!empty($message)) {
     echo $message;
 }
 ?>
+

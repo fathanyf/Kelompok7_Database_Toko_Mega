@@ -82,14 +82,6 @@ $id_akses = $barang_data['IdAkses'];
             <td>Nama Barang</td>
             <td><input type="text" name="nama_barang" value="<?php echo $nama_barang; ?>"></td>
         </tr>
-        <!-- <tr> 
-            <td>Nama Depan</td>
-            <td><input type="text" name="nama_depan" value="<?php echo $nama_depan; ?>"></td>
-        </tr>
-        <tr> 
-            <td>Nama Belakang</td>
-            <td><input type="text" name="nama_belakang" value="<?php echo $nama_belakang; ?>"></td>
-        </tr> -->
         <tr> 
             <td>Keterangan</td>
             <td><input type="text" name="keterangan" value="<?php echo $keterangan; ?>"></td>

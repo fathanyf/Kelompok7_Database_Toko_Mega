@@ -27,7 +27,7 @@ class SupplierController {
     }
 }
 
-// Create database connection using config file
+
 include_once("config.php");
 
 $supplierController = new SupplierController($mysqli);

@@ -22,7 +22,6 @@ class PenggunaDeleter {
     }
 }
 
-// Create database connection using config file
 include_once("config.php");
 
 $penggunaDeleter = new PenggunaDeleter($mysqli);
@@ -31,3 +30,4 @@ $id = $_GET['id'];
 
 $message = $penggunaDeleter->deletePengguna($id);
 ?>
+

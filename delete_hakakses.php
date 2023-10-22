@@ -22,7 +22,6 @@ class HakAksesDeleter {
     }
 }
 
-// Create database connection using config file
 include_once("config.php");
 
 $hakAksesDeleter = new HakAksesDeleter($mysqli);
@@ -31,3 +30,4 @@ $id = $_GET['id'];
 
 $message = $hakAksesDeleter->deleteHakAkses($id);
 ?>
+

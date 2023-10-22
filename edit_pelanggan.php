@@ -27,7 +27,7 @@ class PelangganController {
     }
 }
 
-// Create database connection using the config file
+
 include_once("config.php");
 
 $pelangganController = new PelangganController($mysqli);
