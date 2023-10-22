@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-class HakAksesController {
+class HakAksesDeleter {
     private $mysqli;
 
     public function __construct($mysqli) {
@@ -17,7 +17,7 @@ class HakAksesController {
             header("Location: hakakses.php");
             exit;
         } else {
-            echo "Error deleting Hak Akses: " . mysqli_error($this->mysqli);
+            return "Error deleting Hak Akses: " . mysqli_error($this->mysqli);
         }
     }
 }
@@ -25,9 +25,9 @@ class HakAksesController {
 // Create database connection using config file
 include_once("config.php");
 
-$hakaksesController = new HakAksesController($mysqli);
+$hakAksesDeleter = new HakAksesDeleter($mysqli);
 
 $id = $_GET['id'];
 
-$message = $hakaksesController->deleteHakAkses($id);
+$message = $hakAksesDeleter->deleteHakAkses($id);
 ?>

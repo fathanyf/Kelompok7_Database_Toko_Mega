@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-class PenggunaController {
+class PenggunaDeleter {
     private $mysqli;
 
     public function __construct($mysqli) {
@@ -25,9 +25,9 @@ class PenggunaController {
 // Create database connection using config file
 include_once("config.php");
 
-$penggunaController = new PenggunaController($mysqli);
+$penggunaDeleter = new PenggunaDeleter($mysqli);
 
 $id = $_GET['id'];
 
-$message = $penggunaController->deletePengguna($id);
+$message = $penggunaDeleter->deletePengguna($id);
 ?>

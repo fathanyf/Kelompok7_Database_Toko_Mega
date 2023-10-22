@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-class SupplierController {
+class SupplierDeleter {
     private $mysqli;
 
     public function __construct($mysqli) {
@@ -17,7 +17,7 @@ class SupplierController {
             header("Location: supplier.php");
             exit;
         } else {
-            echo "Error deleting Supplier: " . mysqli_error($this->mysqli);
+            return "Error deleting Supplier: " . mysqli_error($this->mysqli);
         }
     }
 }
@@ -25,9 +25,9 @@ class SupplierController {
 // Create database connection using config file
 include_once("config.php");
 
-$supplierController = new SupplierController($mysqli);
+$supplierDeleter = new SupplierDeleter($mysqli);
 
 $id = $_GET['id'];
 
-$message = $supplierController->deleteSupplier($id);
+$message = $supplierDeleter->deleteSupplier($id);
 ?>

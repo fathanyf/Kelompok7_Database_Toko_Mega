@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-class PenjualanController {
+class PenjualanDeleter {
     private $mysqli;
 
     public function __construct($mysqli) {
@@ -25,8 +25,9 @@ class PenjualanController {
 // Create database connection using config file
 include_once("config.php");
 
-$penjualanController = new PenjualanController($mysqli);
+$penjualanDeleter = new PenjualanDeleter($mysqli);
 
 $id = $_GET['id'];
 
-$message = $penjualanController->deletePenjualan($id);
+$message = $penjualanDeleter->deletePenjualan($id);
+?>
