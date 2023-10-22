@@ -14,7 +14,7 @@ class PenjualanController {
         $result = mysqli_query($this->mysqli, $query);
 
         if ($result) {
-            // Redirect to penjualan.php
+       
             header("Location: penjualan.php");
             exit;
         } else {

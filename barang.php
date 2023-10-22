@@ -16,10 +16,10 @@ class DatabaseConnection {
     }
 }
 
-// Create a database connection using the config file
+
 $databaseConnection = new DatabaseConnection("config.php");
 
-// Fetch all barang data from the database
+
 $result = $databaseConnection->fetchDataFromDatabase("barang");
 ?>
 
@@ -42,8 +42,6 @@ $result = $databaseConnection->fetchDataFromDatabase("barang");
         echo "<tr>";
         echo "<td>".$barang_data['IdBarang']."</td>";
         echo "<td>".$barang_data['NamaBarang']."</td>";
-        // echo "<td>".$barang_data['NamaDepan']."</td>";
-        // echo "<td>".$barang_data['NamaBelakang']."</td>";
         echo "<td>".$barang_data['Keterangan']."</td>";
         echo "<td>".$barang_data['Satuan']."</td>";
         echo "<td>".$barang_data['NoHp']."</td>";

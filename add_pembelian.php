@@ -14,7 +14,7 @@ class PembelianManager {
         $result = mysqli_query($this->mysqli, $query);
 
         if ($result) {
-            // Redirect to pembelian.php
+            
             header("Location: pembelian.php");
             exit;
         } else {
@@ -23,7 +23,7 @@ class PembelianManager {
     }
 }
 
-// Create database connection using config file
+
 include_once("config.php");
 
 $pembelianManager = new PembelianManager($mysqli);

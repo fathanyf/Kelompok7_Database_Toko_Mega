@@ -22,7 +22,7 @@ class PelangganManager {
     }
 }
 
-// Create database connection using config file
+
 include_once("config.php");
 
 $pelangganManager = new PelangganManager($mysqli);
