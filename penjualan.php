@@ -16,8 +16,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM penjualan");
 
 <body>
 <body bgcolor="007fff">
-<a href="add_penjualan.php">Add New Penjualan</a>
-<a href="index.php">Index</a><br/><br/>
+<a href="add_penjualan.php"><button>Add New Penjualan</button></a>
+<a href="index.php"><button>Halaman Utama</button></a><br/><br/>
 
     <table width='80%' border=1 style="background-color:#FFFFE0;">
 

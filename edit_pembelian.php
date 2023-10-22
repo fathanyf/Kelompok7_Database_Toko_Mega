@@ -66,7 +66,7 @@ if (isset($_GET['id'])) {
 </head>
 
 <body>
-<a href="pembelian.php">Go to Pembelian List</a>
+<a href="pembelian.php"><button>Go to Pembelian List</button></a>
 <br/><br/>
 
 <?php if (isset($_GET['id'])) { ?>

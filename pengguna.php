@@ -29,8 +29,8 @@ $result = $databaseConnection->fetchDataFromDatabase("pengguna");
 </head>
 
 <body bgcolor="#007fff">
-<a href="add_pengguna.php">Add New Pengguna</a>
-<a href="index.php">Index</a><br/><br/>
+<a href="add_pengguna.php"><button>Add New Pengguna</button></a>
+<a href="index.php"><button>Halaman Utama</button></a><br/><br/>
 
     <table width='80%' border=1 style="background-color:#FFFFE0;">
 
@@ -42,7 +42,7 @@ $result = $databaseConnection->fetchDataFromDatabase("pengguna");
         echo "<tr>";
         echo "<td>".$pengguna_data['IdPengguna']."</td>";
         echo "<td>".$pengguna_data['NamaPengguna']."</td>";
-        echo "<td>".$pengguna_data['Password']."</td>";
+        echo "<td>********</td>"; // Replace the password with asterisks
         echo "<td>".$pengguna_data['HakAkses']."</td>";
         echo "<td><a href='edit_pengguna.php?id=".$pengguna_data['IdPengguna']."'>Edit</a> | <a href='delete_pengguna.php?id=".$pengguna_data['IdPengguna']."'>Delete</a></td></tr>";
     }
@@ -50,3 +50,4 @@ $result = $databaseConnection->fetchDataFromDatabase("pengguna");
     </table>
 </body>
 </html>
+

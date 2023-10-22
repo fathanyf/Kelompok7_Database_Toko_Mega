@@ -61,7 +61,7 @@ $hak_akses = $pengguna_data['HakAkses'];
 </head>
 
 <body>
-<a href="pengguna.php">Go to Pengguna List</a>
+<a href="pengguna.php"><button>Go to Pengguna List</button></a>
 <br/><br/>
 
 <form name="update_pengguna" method="post" action="edit_pengguna.php">
@@ -75,7 +75,7 @@ $hak_akses = $pengguna_data['HakAkses'];
             <td><input type="text" name="password" value="<?php echo $password; ?>"></td>
         </tr>
         <tr> 
-            <td>Hak Akses</td>
+            <td>IdAkses</td>
             <td><input type="text" name="hak_akses" value="<?php echo $hak_akses; ?>"></td>
         </tr>
         <tr>

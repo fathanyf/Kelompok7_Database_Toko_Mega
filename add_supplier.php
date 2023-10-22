@@ -42,7 +42,7 @@ if (isset($_POST['Submit'])) {
 </head>
 
 <body>
-<a href="supplier.php">Go to Supplier List</a>
+<a href="supplier.php"><button>Go to Supplier List</button></a>
 <br/><br/>
 
 <form action="add_supplier.php" method="post" name="form1">

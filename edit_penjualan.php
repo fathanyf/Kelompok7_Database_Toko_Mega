@@ -59,7 +59,7 @@ $harga_penjualan = $penjualan_data['HargaJual'];
 </head>
 
 <body>
-<a href="penjualan.php">Go to Penjualan List</a>
+<a href="penjualan.php"><button>Go to Penjualan List</button></a>
 <br/><br/>
 
 <form name="update_penjualan" method="post" action="edit_penjualan.php">

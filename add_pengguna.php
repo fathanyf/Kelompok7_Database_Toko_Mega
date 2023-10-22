@@ -39,10 +39,20 @@ if (isset($_POST['Submit'])) {
 <html>
 <head>
     <title>Add Pengguna</title>
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById('password');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+    </script>
 </head>
 
 <body>
-<a href="pengguna.php">Go to Pengguna List</a>
+<a href="pengguna.php"><button>Go to Pengguna List</button></a>
 <br/><br/>
 
 <form action="add_pengguna.php" method="post" name="form1">
@@ -53,10 +63,13 @@ if (isset($_POST['Submit'])) {
         </tr>
         <tr> 
             <td>Password</td>
-            <td><input type="text" name="password"></td>
+            <td>
+                <input type="password" id="password" name="password">
+                <button type="button" onclick="togglePasswordVisibility()">Show Password</button>
+            </td>
         </tr>
         <tr> 
-            <td>Hak Akses</td>
+            <td>IdAkses</td>
             <td><input type="text" name="hak_akses"></td>
         </tr>
         <tr> 

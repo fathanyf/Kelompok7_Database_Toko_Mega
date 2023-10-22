@@ -47,7 +47,7 @@ if (isset($_POST['Submit'])) {
 </head>
 
 <body>
-<a href="pelanggan.php">Go to Pelanggan List</a>
+<a href="pelanggan.php"><button>Go to Pelanggan List</button></a>
 <br/><br/>
 
 <form action="add_pelanggan.php" method="post" name="form1">
@@ -57,7 +57,7 @@ if (isset($_POST['Submit'])) {
             <td><input type="text" name="id_pembelian"></td>
         </tr>
         <tr> 
-            <td>Nim Pelanggan</td>
+            <td>Nama Pelanggan</td>
             <td><input type="text" name="nim_pelanggan"></td>
         </tr>
         <tr> 

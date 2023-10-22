@@ -67,7 +67,7 @@ $id_pengguna = $pelanggan_data['IdPengguna'];
 </head>
 
 <body>
-<a href="pelanggan.php">Go to Pelanggan List</a>
+<a href="pelanggan.php"><button>Go to Pelanggan List</button></a>
 <br/><br/>
 
 <form name="update_pelanggan" method="post" action="edit_pelanggan.php">
@@ -77,7 +77,7 @@ $id_pengguna = $pelanggan_data['IdPengguna'];
             <td><input type="text" name="id_pembelian" value="<?php echo $id_pembelian; ?>"></td>
         </tr>
         <tr> 
-            <td>Nim Pelanggan</td>
+            <td>Nama Pelanggan</td>
             <td><input type="text" name="nim_pelanggan" value="<?php echo $nim_pelanggan; ?>"></td>
         </tr>
         <tr> 

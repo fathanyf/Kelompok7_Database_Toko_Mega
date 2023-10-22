@@ -14,7 +14,9 @@ class PenjualanController {
         $result = mysqli_query($this->mysqli, $query);
 
         if ($result) {
-            return "Penjualan added successfully. <a href='penjualan.php'>View Penjualan</a>";
+            // Redirect to penjualan.php
+            header("Location: penjualan.php");
+            exit;
         } else {
             return "Error adding Penjualan: " . mysqli_error($this->mysqli);
         }
@@ -29,10 +31,9 @@ if (isset($_POST['Submit'])) {
 
     $penjualanController = new PenjualanController($mysqli);
     $message = $penjualanController->addPenjualan($jumlah_penjualan, $harga_penjualan);
-
-    echo $message;
 }
 ?>
+
 
 <html>
 <head>
@@ -40,7 +41,7 @@ if (isset($_POST['Submit'])) {
 </head>
 
 <body>
-<a href="penjualan.php">Go to Penjualan List</a>
+<a href="penjualan.php"><button>Go to Penjualan List</button></a>
 <br/><br/>
 
 <form action="add_penjualan.php" method="post" name="form1">

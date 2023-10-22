@@ -29,8 +29,8 @@ $result = $databaseConnection->fetchDataFromDatabase("supplier");
 </head>
 
 <body bgcolor="#007fff">
-<a href="add_supplier.php">Add New Supplier</a>
-<a href="index.php">Index</a><br/><br/>
+<a href="add_supplier.php"><button>Add New Supplier</button></a>
+<a href="index.php"><button>Halaman Utama</button></a><br/><br/>
 
 <table width='80%' border=1 style="background-color:#FFFFE0;">
 

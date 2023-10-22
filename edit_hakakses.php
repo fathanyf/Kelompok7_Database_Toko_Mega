@@ -59,7 +59,7 @@ $keterangan = $hakakses_data['Keterangan'];
 </head>
 
 <body>
-<a href="hakakses.php">Go to Hak Akses List</a>
+<a href="hakakses.php"><button>Go to Hak Akses List</button></a>
 <br/><br/>
 
 <form name="update_hakakses" method="post" action="edit_hakakses.php">

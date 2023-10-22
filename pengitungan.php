@@ -5,7 +5,7 @@
 </head>
 <body bgcolor="007fff">
     <h1>Jumlah Hitungan</h1>
-    <a href="index.php">Index</a>
+    <a href="index.php"><button>Halaman Utama</button></a>
     <?php
     // Connect to your database
     $db_host = 'localhost';

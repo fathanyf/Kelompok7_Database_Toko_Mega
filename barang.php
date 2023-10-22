@@ -29,21 +29,21 @@ $result = $databaseConnection->fetchDataFromDatabase("barang");
 </head>
 
 <body bgcolor="#007fff">
-<a href="add_barang.php">Add New Barang</a>
-<a href="index.php">Index</a><br/><br/>
+<a href="add_barang.php"><button>Add New Barang</button></a>
+<a href="index.php"><button>Halaman Utama</button></a><br/><br/>
 
     <table width='80%' border=1 style="background-color:#FFFFE0;">
 
     <tr>
-        <th>Id Barang</th> <th>Nama Barang</th> <th>Nama Depan</th> <th>Nama Belakang</th> <th>Keterangan</th> <th>Satuan</th> <th>No HP</th> <th>Alamat</th> <th>IdPengguna</th> <th>IdAkses</th> <th>Action</th>
+        <th>Id Barang</th> <th>Nama Barang</th> <th>Keterangan</th> <th>Satuan</th> <th>No HP</th> <th>Alamat</th> <th>IdPengguna</th> <th>IdAkses</th> <th>Action</th>
     </tr>
     <?php  
     while ($barang_data = mysqli_fetch_array($result)) {
         echo "<tr>";
         echo "<td>".$barang_data['IdBarang']."</td>";
         echo "<td>".$barang_data['NamaBarang']."</td>";
-        echo "<td>".$barang_data['NamaDepan']."</td>";
-        echo "<td>".$barang_data['NamaBelakang']."</td>";
+        // echo "<td>".$barang_data['NamaDepan']."</td>";
+        // echo "<td>".$barang_data['NamaBelakang']."</td>";
         echo "<td>".$barang_data['Keterangan']."</td>";
         echo "<td>".$barang_data['Satuan']."</td>";
         echo "<td>".$barang_data['NoHp']."</td>";

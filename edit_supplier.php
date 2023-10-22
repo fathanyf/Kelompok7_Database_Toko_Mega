@@ -61,7 +61,7 @@ $id_akses = $supplier_data['IdAkses'];
 </head>
 
 <body>
-<a href="supplier.php">Go to Supplier List</a>
+<a href="supplier.php"><button>Go to Supplier List</button></a>
 <br/><br/>
 
 <form name="update_supplier" method="post" action="edit_supplier.php">

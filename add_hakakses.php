@@ -41,7 +41,7 @@ if (isset($_POST['Submit'])) {
 </head>
 
 <body>
-<a href="hakakses.php">Go to Hak Akses List</a>
+<a href="hakakses.php"><button>Go to Hak Akses List</button></a>
 <br/><br/>
 
 <form action="add_hakakses.php" method="post" name="form1">

@@ -15,13 +15,13 @@ $result = mysqli_query($mysqli, "SELECT * FROM hakakses");
 </head>
 
 <body bgcolor="#007fff">
-<a href="add_hakakses.php">Add New Hak Akses</a>
-<a href="index.php">Index</a><br/><br/>
+<a href="add_hakakses.php"><button>Add New Hak Akses</button></a>
+<a href="index.php"><button>Halaman Utama</button></a><br/><br/>
 
     <table width='80%' border=1 style="background-color:#FFFFE0;">
 
     <tr>
-        <th>Id Akses</th> <th>Nama Akses</th> <th>Keterangan</th>
+        <th>Id Akses</th> <th>Nama Akses</th> <th>Keterangan</th> <th>Action</th>
     </tr>
     <?php  
     while ($hakakses_data = mysqli_fetch_array($result)) {
@@ -35,3 +35,4 @@ $result = mysqli_query($mysqli, "SELECT * FROM hakakses");
     </table>
 </body>
 </html>
+

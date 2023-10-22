@@ -29,8 +29,8 @@ $result = $databaseConnection->fetchDataFromDatabase("pembelian");
 </head>
 
 <body bgcolor="#007fff">
-<a href="add_pembelian.php">Add New Pembelian</a>
-<a href="index.php">Index</a><br/><br/>
+<a href="add_pembelian.php"><button>Add New Pembelian</button></a>
+<a href="index.php"><button>Halaman Utama</button></a><br/><br/>
 
     <table width='80%' border=1 style="background-color:#FFFFE0;">
 
