@@ -10,7 +10,8 @@ class BarangController {
     }
 
     public function addBarang($nama_barang, $nama_depan, $nama_belakang, $keterangan, $satuan, $no_hp, $alamat, $id_pengguna, $id_akses) {
-        $query = "INSERT INTO barang (NamaBarang, NamaDepan, NamaBelakang, Keterangan, Satuan, NoHp, Alamat, IdPengguna, IdAkses) VALUES ('$nama_barang', '$nama_depan', '$nama_belakang', '$keterangan', '$satuan', '$no_hp', '$alamat', '$id_pengguna', '$id_akses')";
+        $query = "INSERT INTO barang (NamaBarang, NamaDepan, NamaBelakang, Keterangan, Satuan, NoHp, Alamat, IdPengguna, IdAkses) 
+        VALUES ('$nama_barang', '$nama_depan', '$nama_belakang', '$keterangan', '$satuan', '$no_hp', '$alamat', '$id_pengguna', '$id_akses')";
         $result = mysqli_query($this->mysqli, $query);
 
         if ($result) {
